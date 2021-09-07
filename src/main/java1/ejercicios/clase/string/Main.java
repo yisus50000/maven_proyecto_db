@@ -13,7 +13,7 @@ public class Main {
 		String palabra = teclado.nextLine();
 		
 		boolean resultado = frase.contains(palabra);
-		System.out.println("conntiene la palabra: " + resultado);
+		System.out.println("contiene la palabra: " + resultado);
 		
 		//2. Equals
 		
@@ -33,7 +33,7 @@ public class Main {
 		System.out.println("******************************************************");
 		String nombre2 = "MARCO";
 		String nombreEnMinuscula = nombre2.toLowerCase();
-		System.out.println("Nombre en mayuscula" + nombreEnMinuscula);
+		System.out.println("Nombre en mayuscula: " + nombreEnMinuscula);
 	}
 
 }
