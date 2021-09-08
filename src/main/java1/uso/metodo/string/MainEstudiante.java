@@ -9,24 +9,23 @@ public class MainEstudiante {
 		Scanner teclado = new Scanner(System.in);
 		int selec;
 		String cedula;
-		    MetodosEstudiante cedula1 = new MetodosEstudiante();
-			cedula1.setCedulaGuardada(cedula);	
-			MetodosEstudiante cedula2 = new MetodosEstudiante();
-			cedula2.setCedulaGuardada(cedula);	
-			MetodosEstudiante cedula3 = new MetodosEstudiante();
-			cedula3.setCedulaGuardada(cedula);	
-			MetodosEstudiante cedula4 = new MetodosEstudiante();
-			cedula4.setCedulaGuardada(cedula);	
-			MetodosEstudiante cedula5 = new MetodosEstudiante();
-			cedula5.setCedulaGuardada(cedula);
-			MetodosEstudiante estudiante[] = new MetodosEstudiante[5];	
-			estudiante[0] = cedula1;
-			estudiante[1] = cedula2;
-			estudiante[2] = cedula3;
-			estudiante[3] = cedula4;
-			estudiante[4] = cedula5;
+		Estudiante cedula1 = new Estudiante();
+		cedula1.setCedulaGuardada(cedula);
+		Estudiante cedula2 = new Estudiante();
+		cedula2.setCedulaGuardada(cedula);
+		Estudiante cedula3 = new Estudiante();
+		cedula3.setCedulaGuardada(cedula);
+		Estudiante cedula4 = new Estudiante();
+		cedula4.setCedulaGuardada(cedula);
+		Estudiante cedula5 = new Estudiante();
+		cedula5.setCedulaGuardada(cedula);
+		Estudiante estudiante[] = new Estudiante[5];
+		estudiante[0] = cedula1;
+		estudiante[1] = cedula2;
+		estudiante[2] = cedula3;
+		estudiante[3] = cedula4;
+		estudiante[4] = cedula5;
 		do {
-
 			System.out.println("*********************");
 			System.out.println("*****ELIJA UNA OPCION*****");
 			System.out.println("1. Ingresar Estudiante: ");
@@ -40,14 +39,16 @@ public class MainEstudiante {
 				System.out.println("Ingrese cedula del estudiante: ");
 				cedula = teclado.nextLine();
 				for (int i = 0; i < 5; i++) {
-				estudiante[i] = cedula;
+					estudiante estudiantec = estudiante[1];
+					String cedula = estudiante.getCedula;
 				}
 			} else if (selec == 2) {
 				System.out.println("Ingrese cedula del estudiante: ");
 				String cadena1 = cedula;
 				String cadena2 = teclado.nextLine();
 				boolean resultado = cadena1.equals(cadena2);
-				System.out.println("La cedula es: "+ resultado);
+				System.out.println("La cedula es: " + resultado);
+
 			} else if (selec == 3) {
 				System.out.println("Hasta Pronto");
 				selec = teclado.nextInt();
