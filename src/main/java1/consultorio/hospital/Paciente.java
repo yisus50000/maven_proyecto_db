@@ -49,7 +49,6 @@ public class Paciente extends MainResgistro implements Comparable<Paciente>{
 		}
 	}
 
-	@Override
 	public String toString() {
 		return "Paciente [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", sintoma=" + sintoma
 				+ "]";
